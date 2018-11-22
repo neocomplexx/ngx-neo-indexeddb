@@ -133,6 +133,41 @@
           }
         }
       }
+    },
+    "ngx-neo-indexeddb": {
+      "root": "projects/ngx-neo-indexeddb",
+      "sourceRoot": "projects/ngx-neo-indexeddb/src",
+      "projectType": "library",
+      "prefix": "neo",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ngx-neo-indexeddb/tsconfig.lib.json",
+            "project": "projects/ngx-neo-indexeddb/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-neo-indexeddb/src/test.ts",
+            "tsConfig": "projects/ngx-neo-indexeddb/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-neo-indexeddb/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngx-neo-indexeddb/tsconfig.lib.json",
+              "projects/ngx-neo-indexeddb/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "neo-indexeddb"
