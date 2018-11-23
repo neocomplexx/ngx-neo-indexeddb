@@ -1,5 +1,5 @@
 {
-  "name": "ngx-neo-indexeddb",
+  "name": "@neocomplexx/ngx-neo-indexeddb",
   "version": "7.0.0",
   "peerDependencies": {
     "@angular/common": "^7.0.0",
@@ -9,12 +9,20 @@
     "name": "NeoComplexx",
     "email": "info@neocomplexx.com"
   },
+   "repository": {
+    "type": "git",
+    "url": "https://github.com/neocomplexx/ngx-neo-indexeddb"
+  },
+  "bugs": {
+    "url": "https://github.com/neocomplexx/ng-neo-indexeddb/issues"
+  },
   "keywords": [
     "Angular",
     "DataBase",
     "Library",
     "Indexed",
-    "Indexeddb"
+    "Indexeddb",
+    "NeoComplexx"
   ],
   "license": "MIT"
 }
